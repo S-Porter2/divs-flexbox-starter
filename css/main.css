@@ -108,16 +108,37 @@ body {
   height: 100%;
 }
 
+header,
+footer {
+  background-color: black;
+  font-size: 3em;
+  color: yellow;
+  height: 80px;
+  width: 100%;
+
+}
+
+main {
+  background-color: black;
+  font-size: 1.5em;
+  color: white;
+  height: 250px;
+  width: 100%;
+}
+
+header,footer,main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  border-top: solid grey 3px;
-  border-bottom: solid grey 3px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  flex-flow: row wrap;
 }
 
 .div-1, .div-2, .div-3 {
@@ -126,30 +147,29 @@ body {
   width: 30%;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
+  color: red;
+  line-height: 1.2em;
+  font-size: 1.2em;
   background-color: black;
   height: 300px;
 }
 
 .div-1 {
-  padding-bottom: 40px;
-}
-
-.div-2 {
-  border-left: solid grey 2px;
-  border-right: solid grey 2px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.div-3 {
   padding-left: 30px;
 }
 
+.div-2 {
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-left: solid grey 2px;
+  border-right: solid grey 2px;
+}
+
+.div-3 {
+  padding-top: 65px;
+
+}
 
 
 
